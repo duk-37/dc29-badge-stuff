@@ -13,6 +13,7 @@
 
 ## Compiling
 + `clang -O2 -nostdlib -mthumb --target=armv6-none-eabi music.c` -> compile to elf 
+  + If you are on MacOS: add `-fuse-ld=ld` to force correct linker usage
 + `llvm-objcopy --dump-section .text=target.bin a.out` -> dump text section (should just be _start) to bin
 
 ## Usage
