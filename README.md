@@ -13,6 +13,7 @@
 
 ## Compiling
 + `clang -O2 -nostdlib -mthumb --target=armv6-none-eabi music.c` -> compile to elf 
+  + If you are on MacOS: use homebrew to install a full clang build (`brew install llvm`) as lld isn't a thing on the default clang by default for some fucking reason
 + `llvm-objcopy --dump-section .text=target.bin a.out` -> dump text section (should just be _start) to bin
 
 ## Usage
