@@ -17,6 +17,6 @@
 
 ## Usage
 + Open `target.bin` and `flash.bin` in a hex editor
-+ Overwrite post-initialization main function in `flash.bin` with `target.bin` contents (file offset `0x1E8`) with your favorite hex editor of choice (make sure you *overwrite* bytes, not insert new ones
++ Overwrite post-initialization main function in `flash.bin` with `target.bin` contents (file offset `0x1E8`) with your favorite hex editor of choice (make sure you *overwrite* bytes, not insert new ones)
 + Reflash over to the device 
 + Press buttons and have fun!
