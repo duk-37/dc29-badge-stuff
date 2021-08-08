@@ -2,7 +2,7 @@
 
 ## What's in the repo
 + Funny music code
-+ Firmware used
++ Firmware used (in case of updates)
 
 ## Dumping/flashing the firmware
 + To access firmware: hold down bottom right button when pluggin into USB - a drive with a UF2 file should appear
