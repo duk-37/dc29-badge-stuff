@@ -15,7 +15,6 @@
 + Run `make` to compile. Output file is in output/music.uf2
   + If you are on MacOS: use homebrew to install a full clang build (`brew install llvm`) as lld isn't a thing on the default clang for some fucking reason
   + If you are on linux - make sure lld is install (sudo apt install lld)
-+ `llvm-objcopy --dump-section .text=target.bin a.out` -> dump text section (should just be _start) to bin
 
 ## Usage
 + Run `make`
