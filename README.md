@@ -12,12 +12,11 @@
 + To reflash firmware: drag your new UF2 file back into the drive and it should automatically reboot
 
 ## Compiling
-+ `clang -O2 -nostdlib -mthumb --target=armv6-none-eabi music.c` -> compile to elf 
++ Run `make` to compile. Output file is in output/music.uf2
   + If you are on MacOS: use homebrew to install a full clang build (`brew install llvm`) as lld isn't a thing on the default clang for some fucking reason
-+ `llvm-objcopy --dump-section .text=target.bin a.out` -> dump text section (should just be _start) to bin
+  + If you are on linux - make sure lld is installed (`sudo apt install lld`)
 
 ## Usage
-+ Open `target.bin` and `flash.bin` in a hex editor
-+ Overwrite post-initialization main function in `flash.bin` with `target.bin` contents (file offset `0x1E8`) with your favorite hex editor of choice (make sure you *overwrite* bytes, not insert new ones)
-+ Reflash over to the device 
++ Run `make`
++ Reflash `output/music.uf2` over to the device 
 + Press buttons and have fun!
