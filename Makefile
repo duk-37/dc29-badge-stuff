@@ -21,7 +21,7 @@ build: setup
 	$(OBJCOPY) --dump-section .text=$(OUTPUT_DIR)/$(BIN_OUT_FILE) $(OUTPUT_DIR)/$(OUTPUT_FILE)
 
 setup:
-	mkdir -p output
+	mkdir -p $(OUTPUT_DIR)
 
 clean:
-	rm -rf output
+	rm -rf $(OUTPUT_DIR)
